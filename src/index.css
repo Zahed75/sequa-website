@@ -1,0 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button{
+        @apply px-[25px] py-[9.5px] font-default font-bold rounded-[10px] text-sm border-0
+    }
+    .button-fill-blue{
+        @apply bg-[#0473Ea] text-white
+    }
+    .button-outline-white{
+        @apply border-2 border-white text-white
+    }
+    .icon-white{
+        @apply text-white
+    }
+
+}
