@@ -6,7 +6,7 @@ import HeroSection from '../components/landingPage/HeroSection/HeroSection';
 import PartnerSection from '../components/landingPage/PartnerSection/PartnerSection';
 import PressSection from '../components/landingPage/PressSection/PressSection';
 import TalkSection from '../components/landingPage/TalkSection/TalkSection';
-import WhySequaSection from '../components/landingPage/WhySequaSection/WhySequaSection';
+import WhySeaquaSection from '../components/landingPage/WhySeaquaSection/WhySeaquaSection';
 
 
 import './Home.css'
@@ -17,7 +17,7 @@ const Home = () => {
             <HeroSection/>
             <CommerceSection/>
             <GoalSection/>
-            <WhySequaSection/>
+            <WhySeaquaSection/>
             <PartnerSection/>
             <PressSection/>
             <TalkSection/>

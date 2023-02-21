@@ -1,0 +1,18 @@
+
+.press{
+    aspect-ratio: 413/476;
+    max-height: 476px;
+    max-width: 413px;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.press-1-img{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../../../assets/press-1-img.png);
+}
+.press-2-img{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../../../assets/press-2-img.png);
+}
+.press-3-img{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../../../assets/press-3-img.png);
+}

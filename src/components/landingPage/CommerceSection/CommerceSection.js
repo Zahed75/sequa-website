@@ -6,7 +6,7 @@ import './CommerceSection.css'
 
 const CommerceSection = () => {
     return (
-        <div className='bg-white' id='commerce-section'>
+        <div className='bg-white' id='about'>
             <div className='main-container pt-32 pb-32 flex flex-col lg:flex-row items-center'>
                 <div className='w-full lg:w-1/2 pr-0 lg:pr-4'>
                     <h2 className='text-xl font-default font-extrabold text-black'>Integrated Blue Food commerce for everyone</h2>

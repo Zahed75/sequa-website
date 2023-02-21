@@ -6,7 +6,7 @@ import './HeroSection.css'
 
 const HeroSection = () => {
     return (
-        <div className='banner-container '>
+        <div className='banner-container' id='home'>
             <video autoPlay loop muted playsInline src={video} className="video">
             </video>
             <div className=''>
