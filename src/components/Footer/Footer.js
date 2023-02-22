@@ -18,27 +18,27 @@ const Footer = () => {
                         <p className='text-white font-xs font-normal font-default mt-7'>Integrated ocean fisheries and marine aquaculture commerce for the world so that everyone can feel good about it.</p>
                         <div className='flex gap-3 mt-7 items-center'>
                             <p className='text-white font-xs font-normal font-default'>Follow us on:</p>
-                            <a href='/' className='icon-white'><FaFacebook size='22px'/></a>
-                            <a href='/' className='icon-white'><SiLinkedin size='22px'/></a>
-                            <a href='/' className='icon-white'><SiCrunchbase size='22px'/></a>
+                            <a href='https://www.facebook.com/seaquaglobal' target='_blank' className='icon-white'><FaFacebook size='22px'/></a>
+                            <a href='https://www.linkedin.com/company/seaqua' target='_blank' className='icon-white'><SiLinkedin size='22px'/></a>
+                            <a href='https://www.crunchbase.com/organization/seaqua' className='icon-white' target='_blank' ><SiCrunchbase size='22px'/></a>
                         </div>
                     </div>
                     {/* content- */}
                     <div className='flex flex-col gap-3.5 w-[123px]'>
                         <h5 className='text-white font-xs font-extrabold font-default opacity-50'>CONTENTS</h5>
-                        <a className='text-white font-xs font-normal font-default' href='/'>Home</a>
-                        <a className='text-white font-xs font-normal font-default' href='/'>About</a>
-                        <a className='text-white font-xs font-normal font-default' href='/'>Solutions</a>
-                        <a className='text-white font-xs font-normal font-default' href='/'>Partners</a>
-                        <a className='text-white font-xs font-normal font-default' href='/'>Press Room</a>
-                        <a className='text-white font-xs font-normal font-default' href='/'>Media Kit</a>
+                        <a className='text-white font-xs font-normal font-default' href='#home'>Home</a>
+                        <a className='text-white font-xs font-normal font-default' href='#about'>About</a>
+                        <a className='text-white font-xs font-normal font-default' href='#solutions'>Solutions</a>
+                        <a className='text-white font-xs font-normal font-default' href='#partners'>Partners</a>
+                        <a className='text-white font-xs font-normal font-default' href='#press-room'>Press Room</a>
+                        <a className='text-white font-xs font-normal font-default' href='https://drive.google.com/drive/folders/1Eh7U-4yqA8FFCQ4b6Hq3pu_Y_VHKTvmE' target='_blank'>Media Kit</a>
                     </div>
 
                     <div className='flex flex-col gap-3.5 '>
                         <h5 className='text-white font-xs font-extrabold font-default opacity-50'>GET IN TOUCH</h5>
-                        <a className='text-white font-xs font-normal block font-default flex items-center gap-2.5' href='/'><span><BsTelephoneFill className='icon-white' size='22px'/></span>+880 18403 34113</a>
-                        <a className='text-white font-xs font-normal block font-default flex items-center gap-2.5' href='/'><span><BsTelephoneFill className='icon-white' size='22px'/></span>+880 16241 31260</a>
-                        <a className='text-white font-xs font-normal font-default flex items-center gap-2.5' href='/'><span><IoMdMail className='icon-white' size='22px'/></span>business@seaqua.io</a>
+                        <a className='text-white font-xs font-normal block font-default flex items-center gap-2.5' href='tel:+8801840334113'><span><BsTelephoneFill className='icon-white' size='22px'/></span>+880 18403 34113</a>
+                        <a className='text-white font-xs font-normal block font-default flex items-center gap-2.5' href='tel:+8801624131260'><span><BsTelephoneFill className='icon-white' size='22px'/></span>+880 16241 31260</a>
+                        <a className='text-white font-xs font-normal font-default flex items-center gap-2.5' href='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrdBrjKgnfKSCWQkpJgxnwPCbGtwplWfWcxNJPDDZjvmkfzlNkjVbGfChZKVLhNnKBpDt' target='_blank'><span><IoMdMail className='icon-white' size='22px'/></span>business@seaqua.io</a>
                     </div>
                     <div className='flex flex-col gap-3.5 max-w-[350px]'>
                         <h5 className='text-white font-xs font-extrabold font-default opacity-50'>LOCATIONS</h5>
