@@ -11,7 +11,7 @@ html{
         @apply px-[25px] py-[9.5px] font-default font-bold rounded-[10px] text-sm border-0
     }
     .button-fill-blue{
-        @apply bg-[#0473Ea] text-white
+        @apply bg-[#0473Ea] text-white hover:border-r-4 hover:border-b-4 border-green duration-100
     }
     .button-outline-white{
         @apply border-2 border-white text-white
@@ -26,6 +26,6 @@ html{
         @apply py-[13px] px-[18px] rounded-[10px] bg-white ring-[0.5px] ring-blue focus:ring-[1.5px] focus:border-blue outline-0
     }
     .section-header{
-        @apply text-[2.5rem] md:text-xl font-extrabold leading-tight font-default 
+        @apply text-[1.83rem] md:text-xl font-extrabold leading-tight font-default 
     }
 }

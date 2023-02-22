@@ -8,8 +8,8 @@ const PressSection = () => {
                 <h3 className='text-black section-header text-center'>Press Room</h3>
                 <div className='pt-11 flex gap-5 flex-wrap justify-center press-container'>
                     {/* press-1 */}
-                    <div className='box-hover'>
-                        <div className='press flex flex-col justify-end press-1-img p-7'>
+                    <div className='box-hover '>
+                        <div className='press rounded-[15px] flex flex-col justify-end press-1-img p-7'>
                             <h3 className='text-white  font-default text-lg press-text pb-4 font-bold'>Seaqua driving the Bangladesh Blue Revolution</h3>
                             <div>
                                 <button className='button button-outline-white'>Read More</button>
@@ -17,8 +17,8 @@ const PressSection = () => {
                         </div>
                     </div>
                     {/* press-2 */}
-                    <div className='box-hover'>
-                        <div className='press flex flex-col justify-end press-2-img p-7'>
+                    <div className='box-hover '>
+                        <div className='press rounded-[15px] flex flex-col justify-end press-2-img p-7'>
                             <h3 className='text-white  font-default text-lg press-text pb-4 font-bold'>Bangladesh can lead the global 138B Blue Food Industry</h3>
                             <div>
                                 <button className='button button-outline-white'>Read More</button>
@@ -26,8 +26,8 @@ const PressSection = () => {
                         </div>
                     </div>
                     {/* press-3 */}
-                    <div className='box-hover'>
-                        <div className='press flex flex-col justify-end press-3-img p-7'>
+                    <div className='box-hover '>
+                        <div className='press rounded-[15px] flex flex-col justify-end press-3-img p-7'>
                             <h3 className='text-white  font-default text-lg press-text pb-4 font-bold'>Shrimp Export from Bangladesh jump to 1B USD</h3>
                             <div>
                                 <button className='button button-outline-white'>Read More</button>

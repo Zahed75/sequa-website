@@ -2,7 +2,7 @@ import React from 'react';
 
 const TalkSection = () => {
     return (
-        <div className='bg-lightblue'>
+        <div className='bg-lightblue' id='contact'>
             <div className='main-container py-[120px]'>
                 <h2 className='text-black section-header text-center'>Let’s Talk</h2>
                 <div className='flex justify-center pt-2.5'>

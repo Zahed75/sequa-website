@@ -30,12 +30,12 @@ module.exports = {
       extrabold: '800',
     },
     fontSize: {
-      xs: '1rem',
-      sm: '1.25rem',
-      md: '1.5rem',
-      lg: '1.857rem',
-      xl: '3.125rem',
-      xxl: '5.3125rem'
+      xs: '0.9rem',
+      sm: '1rem',
+      md: '1.25rem',
+      lg: '1.5rem',
+      xl: '2.5rem',
+      xxl: '4.5rem'
     },
     extend: {
       lineHeight: {

@@ -27,7 +27,7 @@ const Navbar = () => {
                     <img src={logo} className='w-[180px] pb-3 z-0' alt='' />
 
 
-                    <div className={`lg:bg-transparent rounded-b-[20px] bg-white  w-full lg:flex justify-center duration-500 lg:pt-0 pt-11 ease-in left-0 lg:left-auto pb-3 lg:pb-0 absolute lg:static ${open ? 'top-0' : 'top-[-550px]'}`}>
+                    <div className={`lg:bg-transparent rounded-b-[20px] bg-white w-full lg:flex justify-end lg:justify-center duration-500 lg:pt-0 pt-11 ease-in right-0 lg:left-auto pb-3 lg:pb-0 absolute lg:static ${open ? 'top-0' : 'top-[-550px]'}`}>
                         <ul className='flex flex-col items-center lg:flex-row gap-0 lg:gap-[40px] divide-y lg:divide-none divide-ash'>
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#home'>Home</a></li>
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#about'>About</a></li>
@@ -36,8 +36,8 @@ const Navbar = () => {
                             {/* <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='/home'>Resources</a></li> */}
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex flex-col items-center '>
                                 <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav text-xs text-black lg:text-white font-default flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' /></a>
-                                <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex-col items-center bg-white gap-[40px] divide-y divide-ash'>
-                                    <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center'>
+                                <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex-col items-left bg-white gap-[40px] divide-y divide-ash'>
+                                    <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-left'>
                                         <a href='#press-room' className='block text-xs text-black font-default flex items-center gap-3.5'><img className='w-[37px]' src={pressIcon}alt=''/>Press Room</a>
                                     </li>
                                     <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center'>
@@ -46,11 +46,11 @@ const Navbar = () => {
                                 </ul>
                             </li>
 
-                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><button className='button button-outline-blue w-[154px] text-[18px] font-bold block lg:hidden'>Contact Us</button></li>
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a href='#contact' className='button button-outline-blue w-[154px] text-[18px] font-bold block lg:hidden'>Contact Us</a></li>
                         </ul>
 
                     </div>
-                    <div><button className='button button-outline-white w-[153px] text-[18px] font-bold hidden lg:inline-block'>Contact Us</button></div>
+                    <div><a href='#contact' className='button button-outline-white w-[153px] text-[18px] font-bold hidden lg:inline-block'>Contact us</a></div>
 
                 </div>
                 <div className='cursor-pointer z-0' onClick={() => setOpen(!open)}>
