@@ -9,7 +9,7 @@ const CommerceSection = () => {
         <div className='bg-white' id='about'>
             <div className='main-container pt-32 pb-32 flex flex-col lg:flex-row items-center'>
                 <div className='w-full lg:w-1/2 pr-0 lg:pr-4'>
-                    <h2 className='text-xl font-default font-extrabold text-black'>Integrated Blue Food commerce for everyone</h2>
+                    <h2 className='section-header text-black'>Integrated Blue Food commerce for everyone</h2>
                     <h4 className='text-md text-black font-default font-medium border-t-2 border-ash py-2 mt-7'>Be it Ocean Fisheries</h4>
                     <h4 className='text-md text-black font-default font-medium border-y-2 border-ash py-2'>Be it Marine Aquaculture</h4>
                     <p className='text-sm text-black font-default font-normal mt-7 w-4/5'>We bring commerce to all stakeholders in the value chain, Making it more rewarding for everyone who can feel good about it.</p>

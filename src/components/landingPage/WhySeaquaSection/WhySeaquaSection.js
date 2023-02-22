@@ -9,7 +9,7 @@ const WhySequaSection = () => {
         <div className='bg-white' id='solutions'>
             <div className='main-container pb-[120px] flex flex-col lg:flex-row gap-5'>
                 <div className='w-full lg:w-1/2 mt-[120px]'>
-                    <h2 className='text-black font-default text-xl font-extrabold leading-tight'>Why Choose Seaqua for Your Blue Food Needs?</h2>
+                    <h2 className='text-black section-header'>Why Choose Seaqua for Your Blue Food Needs?</h2>
                     <p className='text-black font-default text-sm font-normal mt-7'>Choose Seaqua for sustainable, innovative, and high-quality Blue Food. Our state-of-the-art processing, seamless sourcing, and cutting-edge production methods are transforming the aquaculture industry, providing healthy and delicious products that are responsibly sourced.</p>
                     <div className='bg-lightgreen mt-[76px] p-7 rounded-[10px]'>
                         <h4 className='text-black font-default text-md font-bold'>Capital</h4>

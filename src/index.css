@@ -20,6 +20,9 @@ html{
         @apply text-white
     }
     .talk-input-field{
-        @apply py-[13px] px-[25px] rounded-[10px] bg-white ring-[0.5px] ring-blue focus:ring-[1.5px] focus:border-blue outline-0
+        @apply py-[13px] px-[18px] rounded-[10px] bg-white ring-[0.5px] ring-blue focus:ring-[1.5px] focus:border-blue outline-0
+    }
+    .section-header{
+        @apply text-[2.5rem] md:text-xl font-extrabold leading-tight font-default 
     }
 }

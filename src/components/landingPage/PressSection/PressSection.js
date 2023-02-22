@@ -5,7 +5,7 @@ const PressSection = () => {
     return (
         <div className='bg-white' id='press-room'>
             <div className='main-container px-5 lg:px-20 py-[120px]'>
-                <h3 className='text-black font-default text-xl font-extrabold text-center'>Press Room</h3>
+                <h3 className='text-black section-header text-center'>Press Room</h3>
                 <div className='pt-11 flex gap-5 flex-wrap justify-center press-container'>
                     {/* press-1 */}
                     <div className='box-hover'>
