@@ -36,11 +36,11 @@ const Navbar = () => {
                             {/* <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='/home'>Resources</a></li> */}
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex flex-col items-center '>
                                 <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav text-xs text-black lg:text-white font-default flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' /></a>
-                                <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex-col items-left bg-white gap-[40px] divide-y divide-ash'>
+                                <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex flex-col items-left bg-white divide-y divide-ash'>
                                     <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-left'>
                                         <a href='#press-room' className='block text-xs text-black font-default flex items-center gap-3.5'><img className='w-[37px]' src={pressIcon}alt=''/>Press Room</a>
                                     </li>
-                                    <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center'>
+                                    <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-left'>
                                         <a href='https://drive.google.com/drive/folders/1Eh7U-4yqA8FFCQ4b6Hq3pu_Y_VHKTvmE' target='_blank' className='block text-xs text-black font-default flex items-center gap-3.5'><img className='w-[37px]' src={folderIcon}/>Media Kit</a>
                                     </li>
                                 </ul>
