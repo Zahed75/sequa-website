@@ -14,7 +14,7 @@ const CommerceSection = () => {
                     <h4 className='text-md text-black font-default font-medium border-y-2 border-ash py-2'>Be it Marine Aquaculture</h4>
                     <p className='text-sm text-black font-default font-normal mt-7 w-4/5'>We bring commerce to all stakeholders in the value chain, Making it more rewarding for everyone who can feel good about it.</p>
                 </div>
-                <div className='w-full lg:w-1/2 mx-5 pl-0 lg:pl-4'>
+                <div className='w-full lg:w-1/2 mx-5 pl-0 lg:pl-4 overflow-hidden'>
                     <div className='flex items-center box-hover w-full mt-5 justify-center gap-3 h-[182px] rounded-xl commerce-div-shadow'>
                         <img className='w-[70px]' src={retail} alt='' />
                         <h5 className='text-md text-black font-default font-medium'>Retail</h5>

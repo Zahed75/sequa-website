@@ -1,64 +1,62 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
-import './Navbar.css'
+import { useState } from 'react';
+import { CgMenu } from 'react-icons/cg';
+import { IoMdClose } from 'react-icons/io';
+import { FiChevronDown } from 'react-icons/fi';
+import pressIcon from '../../assets/press-resources-icon.png'
+import folderIcon from '../../assets/folder-icon.png'
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
+    const showResources = () => {
+        const dropdown = document.getElementById('resources-dropdown')
+        dropdown.classList.remove('hidden')
+    }
+    const hideResources = () => {
+        const dropdown = document.getElementById('resources-dropdown')
+        setTimeout(() => dropdown.classList.add('hidden'), 2000)
+        
+
+    }
     return (
         <div className='main-container'>
-            
-            <div className="navbar navbar-container flex justify-between w-full">
-                <div className="navbar-start flex justify-between w-screen">
-                    <img className='w-44' src={logo} alt='' />
-                    <div className="dropdown dropdown-end">
-                        <label tabIndex={0} className="p-3 cursor-pointer text-white transition-all ease-in duration-300 humburger flex justify-center bg-transparent border-0 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-transparent rounded-lg w-52">
-                            <li><a className="text-white font-default font-normal hover:font-medium" href="/">Home</a></li>
-                            <li><a className="text-white font-default font-normal hover:font-medium" href="/">About</a></li>
-                            <li><a className="text-white font-default font-normal hover:font-medium" href="/">Solutions</a></li>
-                            <li><a className="text-white font-default font-normal hover:font-medium" href="/">Partners</a></li>
-                            
 
-                            <li tabIndex={0}>
-                                <a href='/' className="justify-between text-white font-default font-normal hover:font-medium">
-                                    Resources
-                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                </a>
-                                <ul style={{marginLeft: '-300px'}} className="shadow-lg bg-transparent">
-                                    <li><a className="text-white text-end font-default font-normal hover:font-medium" href="/">Press Room</a></li>
-                                    <li><a className="text-white text-end font-default font-normal hover:font-medium" href="/">Media Kit</a></li>
+            <div className="navbar navbar-container flex justify-between items-center w-full">
+                <div className='bg-blue-200 w-full pt-3 flex items-center justify-between'>
+                    <img src={logo} className='w-[180px] pb-3 z-0' alt='' />
+
+
+                    <div className={`lg:bg-transparent rounded-b-[20px] bg-white  w-full lg:flex justify-center duration-500 lg:pt-0 pt-11 ease-in left-0 lg:left-auto pb-3 lg:pb-0 absolute lg:static ${open ? 'top-0' : 'top-[-550px]'}`}>
+                        <ul className='flex flex-col items-center lg:flex-row gap-0 lg:gap-[40px] divide-y lg:divide-none divide-ash'>
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#home'>Home</a></li>
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#about'>About</a></li>
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#solutions'>Solutions</a></li>
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#partners'>Partners</a></li>
+                            {/* <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='/home'>Resources</a></li> */}
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex flex-col items-center '>
+                                <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav text-xs text-black lg:text-white font-default flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' /></a>
+                                <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex-col items-center bg-white gap-[40px] divide-y divide-ash'>
+                                    <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center'>
+                                        <a href='#press-room' className='block text-xs text-black font-default flex items-center gap-3.5'><img className='w-[37px]' src={pressIcon}alt=''/>Press Room</a>
+                                    </li>
+                                    <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center'>
+                                        <a href='https://drive.google.com/drive/folders/1Eh7U-4yqA8FFCQ4b6Hq3pu_Y_VHKTvmE' target='_blank' className='block text-xs text-black font-default flex items-center gap-3.5'><img className='w-[37px]' src={folderIcon}/>Media Kit</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>
-                                <button className="text-white bg-blue nav-btn border-0 font-default font-normal hover:font-medium rounded-none normal-case px-2 py-2 sm:px-4 sm:py-2 transition-all ease-in" href='/'>Contact Us</button>
 
-                            </li>
+                            <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><button className='button button-outline-blue w-[154px] text-[18px] font-bold block lg:hidden'>Contact Us</button></li>
                         </ul>
-                    </div>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a className="text-white font-default font-normal hover:font-medium" href="/">Home</a></li>
-                        <li><a className="text-white font-default font-normal hover:font-medium" href="/">About</a></li>
-                        <li><a className="text-white font-default font-normal hover:font-medium" href="/">Solutions</a></li>
-                        <li><a className="text-white font-default font-normal hover:font-medium" href="/">Partners</a></li>
-                        
-                        <li tabIndex={0}>
-                            <a className="text-white font-default font-normal hover:font-medium" href="/">
-                                Resources
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                            </a>
-                            <ul className="p-2 bg-transparent">
-                                <li><a className="text-white font-default font-normal hover:font-medium" href="/">Press Room</a></li>
-                                <li><a className="text-white font-default font-normal hover:font-medium" href="/">Media Kit</a></li>
-                            </ul>
-                        </li>
 
-                    </ul>
+                    </div>
+                    <div><button className='button button-outline-white w-[153px] text-[18px] font-bold hidden lg:inline-block'>Contact Us</button></div>
+
                 </div>
-                <div className="navbar-end hidden lg:flex">
-                    <button className="button-outline-white nav-btn button normal-case transition-all ease-in" href='/'>Contact Us</button>
+                <div className='cursor-pointer z-0' onClick={() => setOpen(!open)}>
+                    {
+                        open ? <h3 className='block lg:hidden text-black'><IoMdClose size='24px' /></h3> : <h3 className='block lg:hidden text-white'><CgMenu size='24px' /></h3>
+                    }
                 </div>
             </div>
         </div>

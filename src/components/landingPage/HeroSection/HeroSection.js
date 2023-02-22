@@ -5,8 +5,13 @@ import { BsArrowDownCircle } from 'react-icons/bs';
 import './HeroSection.css'
 
 const HeroSection = () => {
+    const hideResources = () => {
+        const dropdown = document.getElementById('resources-dropdown')
+        dropdown.classList.add('hidden')
+    }
+
     return (
-        <div className='banner-container' id='home'>
+        <div className='banner-container' onDoubleClick={hideResources} id='home'>
             <video autoPlay loop muted playsInline src={video} className="video">
             </video>
             <div className=''>

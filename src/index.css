@@ -16,6 +16,9 @@ html{
     .button-outline-white{
         @apply border-2 border-white text-white
     }
+    .button-outline-blue{
+        @apply border-2 border-blue text-blue
+    }
     .icon-white{
         @apply text-white
     }
