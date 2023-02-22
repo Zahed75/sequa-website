@@ -52,8 +52,8 @@ const Footer = () => {
                 <div className='flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between pt-7'>
                     <div><p className='text-white font-xs font-normal font-default'>© 2023 Seaqua Limited. All Rights Reserved.</p></div>
                     <div className='flex gap-5 sm:gap-7'> 
-                        <a href='/' className='text-white font-xs font-normal font-default'>Privacy Policy</a>
-                        <a href='/' className='text-white font-xs font-normal font-default'>Terms & Condition</a>
+                        <a className='text-white font-xs font-normal font-default'>Privacy Policy</a>
+                        <a className='text-white font-xs font-normal font-default'>Terms & Condition</a>
                     </div>
                 </div>
             </div>
