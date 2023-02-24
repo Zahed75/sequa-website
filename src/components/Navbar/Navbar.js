@@ -33,7 +33,6 @@ const Navbar = () => {
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#about'>About</a></li>
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#solutions'>Solutions</a></li>
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='#partners'>Partners</a></li>
-                            {/* <li className='list-none font-normal hover:font-bold w-full py-4 flex justify-center '><a className=' text-xs text-black lg:text-white font-default' href='/home'>Resources</a></li> */}
                             <li className='list-none font-normal hover:font-bold w-full py-4 flex flex-col items-center '>
                                 <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav text-xs text-black lg:text-white font-default flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' /></a>
                                 <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex flex-col items-left bg-white divide-y divide-ash'>

@@ -11,7 +11,7 @@ html{
         @apply px-[25px] py-[9.5px] font-default font-bold rounded-[10px] text-sm border-0
     }
     .button-fill-blue{
-        @apply bg-[#0473Ea] text-white hover:border-r-4 hover:border-b-4 border-green duration-100
+        @apply bg-[#0473Ea] text-white hover:border-r-4 hover:border-b-4 border-green duration-100 
     }
     .button-outline-white{
         @apply border-2 border-white text-white

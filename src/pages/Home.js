@@ -13,14 +13,14 @@ import './Home.css'
 
 const Home = () => {
     window.addEventListener('scroll', function () {
-        if(window.pageYOffset > 100){
-            document.getElementById('white-navbar').classList.remove('top-[-80px]')
+        if(window.pageYOffset > 700){
+            
+            document.getElementById('white-navbar').classList.remove('top-[-800px]')
             document.getElementById('white-navbar').classList.add('top-0')
         }
-        else if (window.pageYOffset < 100){
+        else if (window.pageYOffset < 700){
             document.getElementById('white-navbar').classList.remove('top-0')
-            document.getElementById('white-navbar').classList.add('top-[-80px]')
-            console.log(document.getElementById('white-navbar').classList)
+            document.getElementById('white-navbar').classList.add('top-[-800px]')
         }
     })
     return (
