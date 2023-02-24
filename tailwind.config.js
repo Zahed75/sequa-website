@@ -44,9 +44,11 @@ module.exports = {
       margin: {
         7: '30px',
         32: '120px',
+      },
+      dropShadow: {
+        'lg': ' 0px 12px 44px rgba(16, 24, 40, 0.15)'
       }
-      
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 }

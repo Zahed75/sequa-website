@@ -12,6 +12,17 @@ import WhySeaquaSection from '../components/landingPage/WhySeaquaSection/WhySeaq
 import './Home.css'
 
 const Home = () => {
+    window.addEventListener('scroll', function () {
+        if(window.pageYOffset > 100){
+            document.getElementById('white-navbar').classList.remove('top-[-80px]')
+            document.getElementById('white-navbar').classList.add('top-0')
+        }
+        else if (window.pageYOffset < 100){
+            document.getElementById('white-navbar').classList.remove('top-0')
+            document.getElementById('white-navbar').classList.add('top-[-80px]')
+            console.log(document.getElementById('white-navbar').classList)
+        }
+    })
     return (
         <div>
             <HeroSection/>

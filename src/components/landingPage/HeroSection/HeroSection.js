@@ -9,7 +9,7 @@ const HeroSection = () => {
         const dropdown = document.getElementById('resources-dropdown')
         dropdown.classList.add('hidden')
     }
-
+    
     return (
         <div className='banner-container' onDoubleClick={hideResources} id='home'>
             <video autoPlay loop muted playsInline src={video} className="video">
@@ -21,7 +21,7 @@ const HeroSection = () => {
                     <p className='text-sm font-normal font-default mt-3 mb-7 text-white w-full sm:w-4/5 lg:w-1/2'>Integrated ocean fisheries and marine aquaculture commerce for the world so that everyone can feel good about it.</p>
                     <a href='#goals' className='button-fill-blue button'>Learn more</a>
                     <div className='flex justify-center w-full'>
-                        <a href='#about' className='duration-300 ease-out transition-all'><h3 className='text-white arrow-bounce '><BsArrowDownCircle className='' size='40px' /></h3></a>
+                        <a href='#about' className='duration-300 ease-out transition-all flex justify-center'><h3 className='text-white arrow-bounce '><BsArrowDownCircle className='' size='40px' /></h3></a>
                     </div>
                 </div>
             </div>

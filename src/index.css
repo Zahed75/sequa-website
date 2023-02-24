@@ -28,4 +28,7 @@ html{
     .section-header{
         @apply text-[1.83rem] md:text-xl font-extrabold leading-tight font-default 
     }
+    .box-hover{
+        @apply duration-500 hover:scale-105 hover:drop-shadow-lg
+    }
 }
