@@ -20,7 +20,7 @@ const WhiteNavbar = () => {
 
     }
     return (
-        <div id='white-navbar' className='fixed w-screen bg-white top-[-80px] duration-300 ease-out'>
+        <div id='white-navbar' className='fixed w-screen z-[9999] bg-white top-[-80px] duration-300 ease-out'>
             <div className='main-container'>
 
                 <div className="navbar navbar-container flex justify-between items-center w-full ">
