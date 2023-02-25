@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-import CommerceSection from '../components/landingPage/CommerceSection/CommerceSection';
+import AboutSection from '../components/landingPage/AboutSection/AboutSection';
 import GoalSection from '../components/landingPage/GoalSection/GoalSection';
 import HeroSection from '../components/landingPage/HeroSection/HeroSection';
 import PartnerSection from '../components/landingPage/PartnerSection/PartnerSection';
 import PressSection from '../components/landingPage/PressSection/PressSection';
+import Solutions from '../components/landingPage/Solutions/SolutionsSection';
 import TalkSection from '../components/landingPage/TalkSection/TalkSection';
-import WhySeaquaSection from '../components/landingPage/WhySeaquaSection/WhySeaquaSection';
 
 
 import './Home.css'
@@ -26,9 +26,9 @@ const Home = () => {
     return (
         <div>
             <HeroSection/>
-            <CommerceSection/>
+            <AboutSection/>
             <GoalSection/>
-            <WhySeaquaSection/>
+            <Solutions/>
             <PartnerSection/>
             <PressSection/>
             <TalkSection/>

@@ -28,7 +28,7 @@ const WhiteNavbar = () => {
                         <a href='/home' className='max-w-[180px]'><img src={logo} className='max-w-[180px] pb-3 z-0' alt='' /></a>
 
 
-                        <div id='white_navbar_menu' className={`bg-white rounded-b-[20px] bg-white w-full lg:flex justify-end lg:justify-center duration-500 lg:pt-0 pt-11 ease-in right-0 lg:left-auto pb-3 lg:pb-0 absolute lg:static ${open ? 'top-0' : 'top-[-550px]'}`}>
+                        <div id='white_navbar_menu' className={`bg-white rounded-b-[20px] bg-white w-full lg:w-max lg:flex justify-end lg:justify-center duration-500 lg:pt-0 pt-11 ease-in right-0 lg:left-auto pb-3 lg:pb-0 absolute lg:static ${open ? 'top-0' : 'top-[-550px]'}`}>
                             <ul className='flex flex-col items-center lg:flex-row gap-0 lg:gap-[40px] divide-y lg:divide-none divide-ash font-normal text-black text-xs'>
                                 <li className='hover:font-bold w-full py-4 flex justify-center '><a className='' href='#home'>Home</a></li>
                                 <li className='hover:font-bold w-full py-4 flex justify-center '><a className='' href='#about'>About</a></li>
@@ -36,7 +36,7 @@ const WhiteNavbar = () => {
                                 <li className='hover:font-bold w-full py-4 flex justify-center '><a className='' href='#partners'>Partners</a></li>
                                 <li className='hover:font-bold w-full py-4 flex flex-col items-center '>
                                     <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' /></a>
-                                    <ul id='resources-dropdown-white' className='drop-shadow-2xl mt-8 p-8 rounded-[20px] hidden absolute flex flex-col items-left bg-white divide-y divide-ash'>
+                                    <ul id='resources-dropdown-white' className='drop-shadow-2xl mt-8 px-8 py-5 rounded-[20px] hidden absolute flex flex-col items-left bg-white divide-y divide-ash'>
                                         <li className=' font-normal hover:font-bold w-full py-4 flex justify-left'>
                                             <a href='#press-room' className='block text-black    flex items-center gap-3.5'><img className='w-[37px]' src={pressIcon} alt='' />Press Room</a>
                                         </li>
@@ -50,7 +50,7 @@ const WhiteNavbar = () => {
                             </ul>
 
                         </div>
-                        <div><a href='#contact' className='button button-outline-blue w-[153px] text-[18px] font-bold hidden lg:inline-block'>Contact us</a></div>
+                        <div><a href='#contact' className='button button-outline-blue text-sm font-bold hidden lg:block'>Contact us</a></div>
 
                     </div>
                     <div className='cursor-pointer z-0' onClick={() => setOpen(!open)}>

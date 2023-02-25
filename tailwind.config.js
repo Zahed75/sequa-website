@@ -8,7 +8,10 @@ module.exports = {
     colors: {
       blue: '#0473EA',
       lightblue: '#ECF7FF',
+      lightblue2: '#E3FFF5',
+      lightsky: '#DFF7FF',
       lightpink: '#FFF4FF',
+      lightpink2: '#FFF6E9',
       lightyellow: '#FFF6E9',
       white: '#fff',
       transparent: 'transparent',
@@ -34,6 +37,7 @@ module.exports = {
       sm: '1rem',
       md: '1.25rem',
       lg: '1.5rem',
+      '2lg': '1.858rem',
       xl: '2.5rem',
       xxl: '4.5rem'
     },
@@ -46,7 +50,8 @@ module.exports = {
         32: '120px',
       },
       dropShadow: {
-        'lg': ' 0px 12px 44px rgba(16, 24, 40, 0.15)'
+        'lg': '0px 12px 44px rgba(16, 24, 40, 0.15)',
+        'md': '0px 12px 44px rgba(16, 24, 40, 0.08)'
       }
     },
   },
