@@ -6,16 +6,17 @@ import { SiCrunchbase } from 'react-icons/si';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 import { TiLocation } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
     return (
         <div className='bg-navyblue'>
             <div className='main-container py-16 font-default'>
-                <div className='pb-7 flex flex-wrap sm:flex-row gap-5 justify-between'>
-                    <div className='max-w-[316px] text-white text-xs font-normal font-default'>
-                        <a href='/home' className='max-w-[180px]'><img src={logo} className='max-w-[180px] pb-3 z-0' alt='' /></a>
-                        <p className='mt-7'>Integrated ocean fisheries and marine aquaculture commerce for the world so that everyone can feel good about it.</p>
+                <div className='pb-7 flex flex-wrap sm:flex-row gap-5 font-default justify-between'>
+                    <div className='max-w-[326px] text-white text-xs font-normal font-default'>
+                        <a href='/home' className=' text-xl font-extrabold flex flex-col leading-tight'><span className='text-white text-[3rem]'>Transforming</span><span className='text-green'>into data-driven</span></a>
+                        <p className='mt-2'>Integrated ocean fisheries and marine aquaculture commerce for the world so that everyone can feel good about it.</p>
                         <div className='flex gap-3 mt-7 items-center'>
                             <p>Follow us on:</p>
                             <a href='https://www.facebook.com/seaquaglobal' target='_blank' className='icon-white'><FaFacebook size='22px' /></a>
@@ -26,12 +27,11 @@ const Footer = () => {
                     {/* content- */}
                     <div className='flex flex-col gap-3.5 w-[123px] text-xs text-white font-normal'>
                         <h5 className='font-extrabold opacity-50'>CONTENTS</h5>
-                        <a href='#home'>Home</a>
-                        <a href='#about'>About</a>
-                        <a href='#solutions'>Solutions</a>
-                        <a href='#partners'>Partners</a>
-                        <a href='#press-room'>Press Room</a>
-                        <a href='https://drive.google.com/drive/folders/1Eh7U-4yqA8FFCQ4b6Hq3pu_Y_VHKTvmE' target='_blank'>Media Kit</a>
+                        <Link to='/home#about'>About</Link>
+                        <Link to='/home#solutions'>Solutions</Link>
+                        <Link to='/home#partners'>Partners</Link>
+                        <Link to='/home#press-room'>Press Room</Link>
+                        <Link to='https://drive.google.com/drive/folders/1Eh7U-4yqA8FFCQ4b6Hq3pu_Y_VHKTvmE' target='_blank'>Media Kit</Link>
                     </div>
 
                     <div className='flex flex-col gap-3.5 text-white text-xs font-normal'>
@@ -52,8 +52,8 @@ const Footer = () => {
                 <div className='flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between pt-7 text-white text-xs font-normal'>
                     <div><p className=''>© 2023 Seaqua Limited. All Rights Reserved.</p></div>
                     <div className='flex gap-5 sm:gap-7'>
-                        <a>Privacy Policy</a>
-                        <a>Terms & Condition</a>
+                        <Link to='/privacy-policy'>Privacy Policy</Link>
+                        <Link to='/terms-conditions'>Terms & Conditions</Link>
                     </div>
                 </div>
             </div>

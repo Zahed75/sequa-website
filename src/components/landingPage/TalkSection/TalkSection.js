@@ -1,21 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const TalkSection = () => {
-    const openForm = () => {
-        document.getElementById('contact-form').classList.remove('hidden')
-
-    }
     return (
         <div className='bg-lightblue' id='contact'>
             <div className='main-container py-[120px] font-default'>
                 <h2 className='text-black section-header text-center'>Let’s Talk</h2>
                 <div className='flex flex-col items-center gap-7 pt-2.5'>
                     <p className='text-black font-normal text-sm text-center w-full lg:w-2/3 xl:w-1/2'>Have a question, comment, or inquiry? We would love to hear from you! Please feel free to contact us</p>
-                    <div>
-                        <button onClick={openForm} className='button button-fill-blue'>Contact us</button>
-                    </div>
+                    
                 </div>
-                <div id='contact-form' className='pt-12 duration-500 grid grid-cols-1 sm:grid-cols-2 grid-rows-4 gap-x-5 gap-y-9 text-xs font-normal text-black hidden'>
+                <div id='contact-form' className={`pt-12 duration-500 grid grid-cols-1 sm:grid-cols-2 grid-rows-4 gap-x-5 gap-y-9 text-xs font-normal text-black`}>
                     {/* name */}
                     <div>
                         <label className='block pb-0.5' htmlFor='name-field'>Your Name*</label>

@@ -18,7 +18,7 @@ const PartnerSection = () => {
                     <h2 className='section-header'>Partnering with us to digitize the Blue Food ecosystem</h2>
                     <div className='mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5'>
                         {/*  */}
-                        <div className='p-7 bg-white rounded-[10px] text-blue test hover-blue-white-text ease-in duration-300'>
+                        <div className='p-7 bg-white rounded-[10px] text-blue hover-blue-white-text ease-in duration-300'>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLScyNEotOo9IOcmHOZdDf6D29nzqANw6nyoiJi-aP0Qst-VeJQ/viewform' target='_blank'>
                                 <h5 className='partners-div-texts text-2lg font-extrabold text'>Fisheries</h5>
                                 <h5 className='partners-div-texts mt-5'><HiArrowRight size='29px' /></h5>

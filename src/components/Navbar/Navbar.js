@@ -9,6 +9,7 @@ import folderIcon from '../../assets/folder-icon.png'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+    const [resourcesOpen, setResourcesOpen] = useState(false)
     const showResources = () => {
         const dropdown = document.getElementById('resources-dropdown')
         dropdown.classList.remove('hidden')
@@ -27,12 +28,11 @@ const Navbar = () => {
                     <a href='/home' className='max-w-[180px]'><img src={logo} className='max-w-[180px] pb-3 z-0' alt='' /></a>
                     <div className={`lg:bg-transparent rounded-b-[20px] bg-white w-full lg:w-max lg:flex justify-end lg:justify-center duration-500 lg:pt-0 pt-11 ease-in right-0 lg:left-auto pb-3 lg:pb-0 absolute lg:static ${open ? 'top-0' : 'top-[-550px]'}`}>
                         <ul className='flex flex-col items-center lg:flex-row gap-0 lg:gap-[40px] divide-y lg:divide-none divide-ash font-normal text-xs test-black lg:text-white'>
-                            <li className='hover:font-bold w-full py-4 flex justify-center '><a href='#home'>Home</a></li>
                             <li className='hover:font-bold w-full py-4 flex justify-center '><a href='#about'>About</a></li>
                             <li className='hover:font-bold w-full py-4 flex justify-center '><a href='#solutions'>Solutions</a></li>
                             <li className='hover:font-bold w-full py-4 flex justify-center '><a href='#partners'>Partners</a></li>
-                            <li className='hover:font-bold w-full py-4 flex flex-col items-center '>
-                                <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' /></a>
+                            <li className='hover:font-bold w-full py-4 flex flex-col items-center 'onMouseEnter={() => setResourcesOpen(true)} onMouseLeave={() => setResourcesOpen(false)}>
+                                <a onMouseMove={() => showResources()} onTouchStart={() => showResources()} onMouseLeave={() => hideResources()} className='resources-link-nav flex gap-2 items-center cursor-pointer'>Resources<FiChevronDown size='20px' className={`${resourcesOpen ? 'rotate-180' : 'rotate-0'}`}/></a>
                                 <ul id='resources-dropdown' className='drop-shadow-2xl mt-8 px-8 py-5 rounded-[20px] hidden absolute flex flex-col items-left bg-white divide-y divide-ash'>
                                     <li className='hover:font-bold w-full py-4 flex justify-left'>
                                         <a href='#press-room' className='block flex text-black font-normal hover:font-bold items-center gap-3.5'><img className='w-[37px]' src={pressIcon} alt='' />Press Room</a>

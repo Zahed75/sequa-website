@@ -18,7 +18,7 @@ const Solutions = () => {
                         <div className=''>
                             <img className='w-[200px]' src={buildingInvesment} alt='' />
                         </div>
-                        <div className='w-full lg:w-1/2'>
+                        <div className='w-full lg:w-3/5'>
                             <h4 className='text-md font-bold'>Capital and investment</h4>
                             <p className=' text-gray text-sm font-normal mt-5'>Our financing mechanisms can help Blue Food producers obtain financing and offer everyone alternative asset-class investment opportunities.</p>
                         </div>
@@ -28,7 +28,7 @@ const Solutions = () => {
                         <div className=''>
                             <img className='w-[200px]' src={catchFish} alt='' />
                         </div>
-                        <div className='w-full lg:w-1/2'>
+                        <div className='w-full lg:w-3/5'>
                             <h4 className='text-md font-bold'>Catch and harvest</h4>
                             <p className=' text-gray text-sm font-normal mt-5'>Our producer framework and equitable management approach boost fisheries and aquaculture resilience.</p>
                         </div>
@@ -38,7 +38,7 @@ const Solutions = () => {
                         <div className=''>
                             <img className='w-[200px]' src={logistic} alt='' />
                         </div>
-                        <div className='w-full lg:w-1/2'>
+                        <div className='w-full lg:w-3/5'>
                             <h4 className='text-md font-bold'>Sourcing and logistics</h4>
                             <p className=' text-gray text-sm font-normal mt-5'>We digitize the supply chain to enable small-scale fisheries and aquaculture enterprises to sell more with fewer resources.</p>
                         </div>
@@ -48,7 +48,7 @@ const Solutions = () => {
                         <div className=''>
                             <img className='w-[200px]' src={managing} alt='' />
                         </div>
-                        <div className='w-full lg:w-1/2'>
+                        <div className='w-full lg:w-3/5'>
                             <h4 className='text-md font-bold'>Traceability</h4>
                             <p className=' text-gray text-sm font-normal mt-5'>Our digital ecosystem makes sure that Blue Food products that can be traced can reach everyone in the world.</p>
                         </div>

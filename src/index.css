@@ -16,6 +16,9 @@ html{
     .green-outline-hover{
         @apply hover:border-r-4 hover:border-b-4 border-green duration-100
     }
+    .blue-outline-hover{
+        @apply hover:border-r-4 hover:border-b-4 border-blue duration-100
+    }
     .button-outline-white{
         @apply border-2 border-white text-white py-[7.5px]
     }
