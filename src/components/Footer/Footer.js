@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../assets/logo.png'
 import { FaFacebook } from 'react-icons/fa';
 import { SiLinkedin } from 'react-icons/si';
 import { SiCrunchbase } from 'react-icons/si';
@@ -7,6 +6,7 @@ import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 import { TiLocation } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 const Footer = () => {
@@ -27,10 +27,10 @@ const Footer = () => {
                     {/* content- */}
                     <div className='flex flex-col gap-3.5 w-[123px] text-xs text-white font-normal'>
                         <h5 className='font-extrabold opacity-50'>CONTENTS</h5>
-                        <Link to='/home#about'>About</Link>
-                        <Link to='/home#solutions'>Solutions</Link>
-                        <Link to='/home#partners'>Partners</Link>
-                        <Link to='/home#press-room'>Press Room</Link>
+                        <HashLink to='/home#about'>About</HashLink>
+                        <HashLink to='/home#solutions'>Solutions</HashLink>
+                        <HashLink to='/home#partners'>Partners</HashLink>
+                        <HashLink to='/home#press-room'>Press Room</HashLink>
                         <Link to='https://drive.google.com/drive/folders/1Eh7U-4yqA8FFCQ4b6Hq3pu_Y_VHKTvmE' target='_blank'>Media Kit</Link>
                     </div>
 

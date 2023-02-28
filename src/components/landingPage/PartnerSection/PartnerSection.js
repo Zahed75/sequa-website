@@ -1,12 +1,9 @@
 import React from 'react';
 import { HiArrowRight } from 'react-icons/hi';
 import image from '../../../assets/partnering.png'
-// import './PartnerSection.css'
 
 const PartnerSection = () => {
-    const handleAnchor = () => {
-
-    }
+    
     return (
         <div className='bg-lightblue' id='partners'>
             <div className='main-container flex flex-col items-center gap-12 lg:flex-row pt-32 pb-32'>
