@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className='pb-7 flex flex-wrap sm:flex-row gap-5 font-default justify-between'>
                     <div className='max-w-[326px] text-white text-xs font-normal font-default'>
                         <a href='/home' className=' text-xl font-extrabold flex flex-col leading-tight'><span className='text-white text-[3rem]'>Transforming</span><span className='text-green'>into data-driven</span></a>
-                        <p className='mt-2'>Integrated ocean fisheries and marine aquaculture commerce for the world so that everyone can feel good about it.</p>
+                        <p className='mt-2'>Integrated ocean fisheries and aquaculture commerce for the world so that everyone can feel good about it.</p>
                         <div className='flex gap-3 mt-7 items-center'>
                             <p>Follow us on:</p>
                             <a href='https://www.facebook.com/seaquaglobal' target='_blank' className='icon-white'><FaFacebook size='22px' /></a>

@@ -14,7 +14,7 @@ const Solutions = () => {
                 </div>
                 <div className='mt-[80px] grid grid-cols-1 md:grid-cols-2 gap-7'>
                     {/*  */}
-                    <div className='bg-lightgreen px-12 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
+                    <div className='bg-lightgreen px-12 md:px-4 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
                         <div className=''>
                             <img className='w-[200px]' src={buildingInvesment} alt='' />
                         </div>
@@ -24,7 +24,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className='bg-lightblue px-12 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
+                    <div className='bg-lightblue px-12 md:px-4 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
                         <div className=''>
                             <img className='w-[200px]' src={catchFish} alt='' />
                         </div>
@@ -34,7 +34,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className='bg-lightyellow px-12 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
+                    <div className='bg-lightyellow px-12 md:px-4 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
                         <div className=''>
                             <img className='w-[200px]' src={logistic} alt='' />
                         </div>
@@ -44,7 +44,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className='bg-lightpink px-12 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
+                    <div className='bg-lightpink px-12 md:px-4 py-16 rounded-[10px] gap-7 flex flex-col lg:flex-row box-hover text-black items-center justify-between'>
                         <div className=''>
                             <img className='w-[200px]' src={managing} alt='' />
                         </div>
