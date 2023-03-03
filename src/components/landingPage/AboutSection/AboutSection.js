@@ -56,7 +56,7 @@ const AboutSection = () => {
                         <div className='p-10 m-2.5 flex flex-col items-center gap-7 shadow-md rounded-b-[10px]'>
                             <img src={globalX} className='h-[90px]' alt='' />
                             <p className='font-normal text-gray'>Source your seafood from Bangladesh directly from our fisheries and aquaculture firm.</p>
-                            <button className='button button-fill-blue w-full green-outline-hover' id='global-x-btn' onMouseEnter={() => changeButtonTextBgGreen('global-x-btn')} onMouseLeave={() => changeButtonTextBgBlue('global-x-btn', 'Send REQ')}>Send RFQ</button>
+                            <button className='button button-fill-blue w-full green-outline-hover' id='global-x-btn' onMouseEnter={() => changeButtonTextBgGreen('global-x-btn')} onMouseLeave={() => changeButtonTextBgBlue('global-x-btn', 'Send RFQ')}>Send RFQ</button>
                         </div>
                     </div>
                 </div>
