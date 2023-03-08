@@ -1,0 +1,9 @@
+@media screen and (max-width: 370px) {
+    .footer-transforming-text{
+    font-size: 32px !important;
+    }
+    .footer-transforming-word{
+    font-size: 38px !important;
+    }
+    
+}

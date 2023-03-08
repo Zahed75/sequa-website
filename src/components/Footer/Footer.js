@@ -7,7 +7,7 @@ import { IoMdMail } from 'react-icons/io';
 import { TiLocation } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
+import './footer.css'
 
 const Footer = () => {
     return (
@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='main-container py-16 font-default'>
                 <div className='pb-7 flex flex-wrap sm:flex-row gap-5 font-default justify-between'>
                     <div className='max-w-[326px] text-white text-xs font-normal font-default'>
-                        <a href='/home' className=' text-xl font-extrabold flex flex-col leading-tight'><span className='text-white text-[3rem]'>Transforming</span><span className='text-green'>into data-driven</span></a>
+                        <a href='/home' className='footer-transforming-text text-xl font-extrabold flex flex-col leading-tight'><span className='text-white text-[3rem] footer-transforming-word'>Transforming</span><span className='text-green'>into data-driven</span></a>
                         <p className='mt-2'>Integrated ocean fisheries and aquaculture commerce for the world so that everyone can feel good about it.</p>
                         <div className='flex gap-3 mt-7 items-center'>
                             <p>Follow us on:</p>
