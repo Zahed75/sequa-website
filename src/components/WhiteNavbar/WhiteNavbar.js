@@ -19,8 +19,6 @@ const WhiteNavbar = () => {
     const hideResources = () => {
         const dropdown = document.getElementById('resources-dropdown-white')
         setTimeout(() => dropdown.classList.add('hidden'), 2000)
-
-
     }
     return (
         <div id='white-navbar' className='fixed w-screen z-[9999] bg-white top-[-800px] duration-100 ease-out'>

@@ -5,6 +5,7 @@ import logistic from '../../../assets/Logistics_hub_2_.png'
 import managing from '../../../assets/managing.png'
 
 const Solutions = () => {
+    
     return (
         <div className='bg-white' id='solutions'>
             <div className='main-container py-[120px] font-default'>
